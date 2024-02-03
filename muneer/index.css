@@ -85,11 +85,32 @@ body {
 }
 
 .stories-container {
-    width: 100%;
+    position: relative;
+    width: 90%;
     display: flex;
     gap: 1rem;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
+
+.stories-container button {
+    width: 20px;
+    height: 20px;
+}
+
+.stories-container .left-button {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+}
+
+.stories-container .right-button {
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+
 
 .story {
     display: flex;

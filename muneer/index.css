@@ -94,23 +94,10 @@ body {
     scrollbar-width: none;
 }
 
-.stories-container button {
-    width: 20px;
-    height: 20px;
+.stories-container::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
-
-.stories-container .left-button {
-    position: absolute;
-    top: 30%;
-    left: 1%;
-}
-
-.stories-container .right-button {
-    position: absolute;
-    top: 30%;
-    right: 1%;
-}
-
 
 .story {
     display: flex;

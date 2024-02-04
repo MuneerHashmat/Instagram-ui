@@ -322,6 +322,9 @@ hr{
 
 .after:hover{
     opacity: 1;
+    background-color: #0000006b;
+    height: 300px;
+    width: 295px;
 }
 
 .grid-item:hover{

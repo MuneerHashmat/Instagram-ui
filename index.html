@@ -62,7 +62,7 @@
                 <span>Notifications</span>
             </a>
 
-            <a href="#" class="link">
+            <a href="#" class="link" id="open-button">
                 <img src="muneer-assets/create.svg" alt="plus">
                 <span>Create</span>
             </a>
@@ -512,12 +512,25 @@
 
 
 
+    <!-- create post popup -->
+    <dialog class="modal" id="modal">
+        <h4 style="margin-top: 10px; font-weight: 500;">Create new post</h4>
+        <hr style="margin-top: 10px;">
+        <div class="centre-content">
+            <img src="muneer-assets/multimedia.png" alt="multimedia" width="100px" height="100px">
+            <p class="normal">Drag photos and videos here</p>
+            <p class="blue">Select from computer</p>
+        </div>
+        <button class="button close-button"><i class="fi fi-rr-cross"></i></button>
+    </dialog>
+
 
 
 
 
     <!-- fontawesome script -->
     <script src="https://kit.fontawesome.com/b51e04bf50.js" crossorigin="anonymous"></script>
+    <script src="muneer/index.js"></script>
 
 </body>
 

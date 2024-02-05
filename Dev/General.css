@@ -1,0 +1,340 @@
+/* Sidebar in mini version CSS*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+:root {
+    --nav-bg: rgb(255, 255, 255);
+    --hover-bg: rgb(225, 225, 225);
+    --text-gray: rgb(120, 120, 120);
+    --text-blue: #0095F6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    gap: 5rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    row-gap: 50px;
+    width: 78px;
+    height: 100vh;
+    background-color: var(--nav-bg);
+    border-right: 1px groove rgb(199, 199, 199);
+    padding: 2rem 1rem 5rem 1rem;
+}
+
+
+.sidebar .mid,
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.sidebar .bottom {
+    padding-bottom: 3rem;
+}
+
+.sidebar a {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a>img {
+    width: 23px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar a>.profile-mini{
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 50%;
+    padding: 0.5px;
+    height: 27px; 
+    width: 27px;
+}
+
+.sidebar a:hover,
+.sidebar a:active {
+    background-color: var(--hover-bg);
+}
+
+.sidebar a:hover>img {
+    transform: scale(1.1);
+}
+
+.sidebar .top img:hover {
+    cursor: pointer;
+}
+
+.messages{
+    position: fixed;
+    flex-direction: column;
+    left: 78px;
+    height: 100vh;
+    width: 30%;
+    border-right: 1px solid black;
+}
+
+.top-box, .top-same-size{
+    height: 100px;
+    width: 100%;
+}
+
+
+.messages> .chats{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.username{
+    display: flex;
+}
+
+
+
+
+
+/* ------------Chats Section-------------- */
+
+
+.chats .chatcontent{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.chats:hover{
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+
+.chats .chatcontent img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px ;
+    margin-right: 20px ;
+    margin-top: 8px;
+    border-radius: 50%;
+}
+
+.chats .chatcontent .name-msg p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.chats .chatcontent .name-msg p span{
+    margin-top: 11px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.chats .chatcontent .name-msg h4{
+    font-size: medium;
+    font-weight: 500;
+    margin: 10px 10px 0px 0px;
+}
+
+.chats .chatcontent #online{
+    width: 10px;
+    height: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:90px;
+}
+
+
+
+
+
+
+
+
+
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden ;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 80px;
+    height: 100vh;
+    width: 400px;
+    max-width: 400px;
+    border-right: 1px solid #dbdbdb;
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+.topbox{
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    height: 100px;
+    /* box-sizing: border-box; */
+    z-index: 999;
+    background-color: white;
+}
+
+.topbox .name{
+    display: flex;
+    flex-direction: row;
+}
+
+.name h4{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.topbox .name> img{
+    width: 12px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    opacity: 0.6;
+}
+
+.edit-chats img{
+    width: 25px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 160px;
+}
+
+.topbox:hover{
+    cursor: pointer;
+}
+
+.not-fixed{
+    margin-top: 10px;
+}
+
+.primary-gen-req{
+    display: flex;
+    position: sticky;
+    top: 65px;
+    justify-content: space-evenly;
+    margin: 10px 0 5px;
+    z-index: 999;
+    background-color: white;
+}
+
+.primary-gen-req .primary, .general, .requests{
+    width: 33%;   
+    padding-bottom: 10px; 
+}
+
+.primary-gen-req .primary, .requests{
+    opacity: 0.6;
+}
+
+.primary-gen-req .general {
+    border-bottom: 1px solid black;
+}
+
+.primary-gen-req a{
+    text-decoration: none;
+    
+    margin: 35px;
+}
+
+.primary-gen-req a:visited{
+    color: black;
+}
+
+
+
+
+/* -------------Rightside main------------- */
+
+
+
+.mainside-right{
+    display: flex;
+    position: absolute;
+    left: 490px;
+    top: 0;
+    width: 1100px;
+    max-width: 1100px;
+    height: 100%;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.right-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    /* border: 1px solid green; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px ;
+    margin-right: 50px;
+}
+
+.right-main img{
+    width: 135px;
+}
+
+.right-main h4, h5{
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right-main h5{
+    opacity: 0.6;
+}
+
+.right-main button{
+    height: 35px;
+    width: 120px;
+    border-radius: 8px;
+    color: whitesmoke;
+    border: none;
+    background-color: #13aeff ;
+}
+
+.right-main button:hover{
+    background-color:#1877f2 ;
+}
+

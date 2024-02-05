@@ -33,6 +33,7 @@
 .suggest > div {
     border-bottom: 1px solid #e6e6e6;
 }
+
 .suggest > div > div  img{
     height: 50px;
     width: 50px;
@@ -127,4 +128,85 @@ a{
 }
 .footer-text a{
     margin-right: 16px;
+}
+
+.container-search{
+    position: fixed;
+    left: 70px;
+    height: 100vh;
+    width: 30%;
+ 
+}
+.search{
+    position: absolute;
+    z-index: 1000;
+    background-color: #fff;
+  
+    height: 100vh;
+    border: 1px solid #f3f3f3;
+    box-shadow: 10px 0px 20px 0px #0c0c0c1f;
+    width: 100%;
+}
+
+
+.search-box{
+    margin-top: 22px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #ebebeb;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+
+.search-control{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-search{
+    height: 100vh;
+    font-size: 13px;
+    font-weight: 500;
+    overflow-y: scroll;
+}
+
+.recent-search::-webkit-scrollbar {
+    display: none;
+  }
+.recent-search > div > div  img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-right: 10px;
+    border: 1px double #ccc;
+}
+.recent-search > div > div{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
+.searched-item:hover{
+    background-color: #eeeeeed7;
+    cursor: pointer;
+}
+.remove{
+    background-color: #8a282800 !important;
+    border-radius: 10px !important;
+    float: right;
+    position: absolute;
+    right: 16px;
+    color: #5c5c5c;
+}
+.clearall{
+    color: #2da1e4;
+    cursor: pointer;
+    font-size: 14px;
+}
+.clearall:hover{
+    color: #086faa;
 }

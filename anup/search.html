@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notification</title>
+    <title>Search</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../muneer/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div class="sidebar" style="width: 110px !important;">
@@ -23,7 +24,7 @@
                 <img src="../muneer-assets/home.svg" alt="home">
             </a>
             
-            <a href="search.html" class="link">
+            <a href="#" class="link">
                 <img src="../muneer-assets/search.svg" alt="search">
             </a>
             
@@ -65,70 +66,53 @@
         
     </div>
     
-    <div class="container-notification">
-        <div class="notification">
+    <div class="container-search">
+        <div class="search">
             <div class="not-head">
-                <h2>Notifications</h2>
-                
+                <h2 style="font-weight: 600;">Search</h2>
             </div>
-            <div class="suggest">
-                <h3>Today</h3>
-                <div>
+            <div style="border-bottom: 1px solid #ccc;">
+                <div style="margin: 20px;">
+                   <Input class="search-box" type="text" placeholder="Search"></Input>
+                </div>
+            </div>
+            <div>
+                <div class="search-control">
+                    <span style="font-size: 15px;"><strong>Recent</strong></span>
+                    <span class="clearall">Clear all</span>
+                </div>
+            </div>
+            <div class="recent-search">
+                <div class="searched-item">
                     <div>
-                        <img src="assets/pp1.jpg" alt="">
-                        <p><strong>avenger_us</strong> started following you. 1h</p>
-                        <button>Follow</button>
+                        <img src="assets/search/si1.jpg" alt="">
+                        <p><strong>cosmos</strong> <br>The Universe</p>
+                        <button class="remove"><span class="material-symbols-rounded">
+                            close
+                            </span></button>
                     </div>
                 </div>
-                <div>
+                <div class="searched-item">
                     <div>
-                        <img src="assets/pp8.jpg" alt="">
-                        <p><a href="people_suggestion.html">Follow<strong> natural_girl RubyRoy Shabnam</strong> and others you know to see their photos and videos. 1h</a></p>
+                        <img src="assets/search/si2.jpg" alt="">
+                        <p><strong>animal_zoo</strong> <br> The Funny Animal </p>
+                        <button class="remove"><span class="material-symbols-rounded">
+                            close
+                            </span></button>
                     </div>
                 </div>
-                <div>
+                <div class="searched-item">
                     <div>
-                        <img src="assets/pp2.jpg" alt="">
-                        <p><strong>ritz_ssk</strong> started following you. 2h</p>
-                        <button class="following">Following</button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="assets/pp3.jpg" alt="">
-                        <p><strong>hiko_kt</strong> liked your story. 3h</p>
-                        <img class="stories" src="assets/stories.jpg">
+                        <img src="assets/search/si3.jpg" alt="">
+                        <p><strong>wild_lion</strong> <br> The Lion King</p>
+                        <button class="remove"><span class="material-symbols-rounded">
+                            close
+                            </span></button>
                     </div>
                 </div>
                 
-                <div>
-                    <div>
-                        <img src="assets/pp4.jpg" alt="">
-                        <p><strong>cute_ox</strong> started following you. 12h</p>
-                        <button>Follow</button>
-                    </div>
-                </div>
-                <h3>Earlier</h3>
-                <div>
-                    <div>
-                        <img src="assets/pp5.jpg" alt="">
-                        <p><strong>mitxx_harry</strong> started following you. 4w</p>
-                        <button>Follow</button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="assets/pp6.jpg" alt="">
-                        <p><strong>light_glow</strong> started following you. 8w</p>
-                        <button>Follow</button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="assets/pp7.jpg" alt="">
-                        <p><a href="people_suggestion.html">Follow<strong> beauty_bird hena5589 rozi_na_cute</strong> and others you know to see their photos and videos. 9w</a></p>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     </div>

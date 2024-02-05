@@ -1,3 +1,6 @@
+/* Sidebar in mini version CSS*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
 :root {
@@ -19,6 +22,8 @@ body {
     width: 100vw;
     overflow-x: hidden;
     gap: 5rem;
+    overflow-x: hidden;
+    overflow-y: hidden ;
 }
 
 .sidebar {
@@ -119,12 +124,6 @@ body {
 
 
 
-
-body{
-    overflow-x: hidden;
-    overflow-y: hidden ;
-}
-
 .main{
     display: flex;
     flex-direction: column;
@@ -135,7 +134,7 @@ body{
     max-width: 400px;
     border-right: 1px solid #dbdbdb;
     overflow-y: scroll;
-    box-shadow: rgba(0, 0, 0, 0.151);
+    /* background-color: red; */
 }
 
 .main::-webkit-scrollbar{
@@ -203,11 +202,11 @@ body{
     padding-bottom: 10px; 
 }
 
-.primary-gen-req .general, .requests{
+.primary-gen-req .primary, .requests{
     opacity: 0.6;
 }
 
-.primary-gen-req .primary {
+.primary-gen-req .requests {
     border-bottom: 1px solid black;
 }
 
@@ -220,7 +219,6 @@ body{
 .primary-gen-req a:visited{
     color: black;
 }
-
 
 
 /* ------------Chats Section-------------- */
@@ -244,6 +242,7 @@ body{
     margin-right: 20px ;
     margin-top: 8px;
     border-radius: 50%;
+    background-color: rgba(169, 169, 169, 0.6) ;
 }
 
 .chats .chatcontent .name-msg p{
@@ -259,7 +258,7 @@ body{
     margin-top: 11px;
     margin-bottom: 10px;
     font-size: 10px;
-    font-weight: 800;
+    font-weight: bold;
     opacity: 0.6;
 }
 
@@ -276,7 +275,6 @@ body{
     margin-bottom: auto;
     margin-left:90px;
 }
-
 
 
 
@@ -337,3 +335,4 @@ body{
 .right-main button:hover{
     background-color:#1877f2 ;
 }
+

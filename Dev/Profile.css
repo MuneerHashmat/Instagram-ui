@@ -6,6 +6,10 @@
     box-sizing: border-box;     
 }
 
+body{
+    /* overflow-x: hidden ; */
+}
+
 :root {
     --nav-bg: rgb(255, 255, 255);
     --hover-bg: rgb(225, 225, 225);
@@ -107,14 +111,14 @@ h1, h2, h3, h4, h5, h6, p, span, li {
 
 
 .right-container{
-    width: 100%;
-    max-width: calc(100% - 300px);
+    width: 800px;
+    max-width: 800px;
 }
 
 .right-panel{
     width:900px ;
     height: 90%;
-    margin-left: 550px;
+    margin-left: 400px;
     margin-top: 1rem;
 }
 
@@ -147,9 +151,14 @@ h1, h2, h3, h4, h5, h6, p, span, li {
     height: 2rem;
 }
 
-.id-details h2{
+.id-details h2 {
     font-size: 1rem;
+    font-weight: 500;
     padding:  5px 0 0 0;
+}
+
+.id-details h2:hover{
+    cursor: pointer;
 }
 
 .id-details img{
@@ -193,15 +202,17 @@ h1, h2, h3, h4, h5, h6, p, span, li {
 
 .name-bio{
     margin-top: 15px;
+    line-height: 0.9;
 }
 
 .name-bio .bio{
+    font-size: 0.9rem;
     margin-top: 10px;
     display: block;
 }
 
 .name-bio img{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     margin-top: 10px;
     width: 20px;
     height: 20px;
@@ -210,9 +221,16 @@ h1, h2, h3, h4, h5, h6, p, span, li {
 }
 
 .name-bio p{
+    font-size: 0.9rem;
     margin-top: 10px;
 }
 
+.name-bio .followedby{
+    display: block;
+    font-size: small;
+    opacity: 0.8;
+    padding: 10px 0 20px 0;
+}
 hr{
     margin-top: 70px;
 }
@@ -235,7 +253,7 @@ hr{
 .posting-navbar ul li{
     list-style: none;
     padding: 10px;
-    padding-left: 0;
+    padding-left: 10px;
     margin-right: 50px;
 }
 
@@ -340,8 +358,10 @@ hr{
 
 
 .footer{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    margin-left: 450px;
+    width: 800px;
     font-size: 12px;
 }
 
@@ -349,13 +369,13 @@ hr{
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     
 }
 
 .footer ul li{
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 .footer ul li a{
@@ -370,8 +390,7 @@ hr{
 
 .contacts{
     color: gray;
-    margin-top: 10px;
-   
+    margin-top: 5px;
 }
 
 .copyright{

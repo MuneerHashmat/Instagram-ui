@@ -7,7 +7,7 @@
 }
 
 body{
-    /* overflow-x: hidden ; */
+    overflow-x: hidden ;
 }
 
 :root {
@@ -21,20 +21,11 @@ h1, h2, h3, h4, h5, h6, p, span, li {
     font-family: 'Poppins', sans-serif;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: row;
-}
 
 
 
 /*--------- Left Panel ------------ */
 
-/* .left-panel{
-    height: 100vh;
-    width: 300px;
-    max-width: 100%;
-} */
 
 .sidebar {
     display: flex;
@@ -143,6 +134,10 @@ h1, h2, h3, h4, h5, h6, p, span, li {
     margin-left: 80px;
 }
 
+.insta-details .name-bio h4{
+    font-weight: 500;
+}
+
 .id-details{
     display: flex;
     flex-direction: row;
@@ -165,6 +160,57 @@ h1, h2, h3, h4, h5, h6, p, span, li {
     width: 22px;
     height: 22px;
     margin: 3px 15px 0px 15px;
+}
+
+.highlights-box{
+    height: 100px;
+    width: 900px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.highlights-box .highlights{
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.highlights-box .highlights .items-hl{
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    height: 125px;
+    padding: 5px 5px ;
+    margin-left: 15px;
+    align-items: center;
+    
+}
+
+.highlights-box .highlights .items-hl img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(219, 219, 219, 1);
+    padding: 4px;
+}
+
+.highlights-box .highlights .items-hl h6{
+    font-weight: 500;
+    font-size: 0.7rem;
+    opacity: 1;
+}
+
+.last-add img{
+    opacity: 0.6;
+    scale: 1.2\;
+}
+
+.highlights-box .highlights .items-hl img,
+h6:hover{
+    cursor: pointer;
 }
 
 .btn{ 
@@ -231,9 +277,7 @@ h1, h2, h3, h4, h5, h6, p, span, li {
     opacity: 0.8;
     padding: 10px 0 20px 0;
 }
-hr{
-    margin-top: 70px;
-}
+
 
 
 /* Post-Navbar Area */
@@ -339,15 +383,13 @@ hr{
 }
 
 .after:hover{
+    cursor: pointer;
     opacity: 1;
     background-color: #0000006b;
     height: 300px;
     width: 295px;
 }
 
-.grid-item:hover{
-    color-interpolation-filters: rgb(184, 177, 177) ;
-}
 
 
 

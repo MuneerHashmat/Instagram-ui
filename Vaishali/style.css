@@ -1,11 +1,15 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
     row-gap: 40px;
-    width: 250px;
+    width: 180px;
     height: 100vh;
     background-color: var(--nav-bg);
     border-right: 1px groove rgb(199, 199, 199);
@@ -52,12 +56,16 @@
 .sidebar .top img:hover {
     cursor: pointer;
 }
-
+body{
+    background-color: hsl(0, 100%, 99%);
+    color: aliceblue;
+}
 
 .container{
-    max-width: 75%;
-    margin-left: 25vw;
+    max-width: 70%;
+    margin-left: 22vw;
     padding: 0 16px;
+    
 }
 
 .vdo{
@@ -75,7 +83,7 @@
 
 .project-grid{
     display: grid;
-    gap: 10px;
+    gap: 5px;
     grid-template-areas: 
     "eth alphabet traveler"
     "eth astro cube"
@@ -86,7 +94,15 @@
     "g h f"
     "i j k"
     "i l m"
-    "n o m";
+    "n o m"
+    "a1 b1 c1"
+    "d1 g1 e1"
+    "f1 g1 h1"
+    "i1 j1 k1"
+    "i1 l1 m1"
+    "n1 o1 p1"
+    "q1 t1 r1"
+    "s1 t1 u1";
    
 }  
    
@@ -116,7 +132,6 @@
 }
 #dimensional{
     grid-area: dimensional;
-  
 
 }
 #a{
@@ -193,6 +208,130 @@
 
 }
 
+#a1{
+    grid-area: a1;
+  
+
+}
+
+#b1{
+    grid-area: b1;
+  
+
+}
+
+#c1{
+    grid-area: c1;
+  
+}
+
+#d1{
+    grid-area:d1;
+  
+
+}
+
+#e1{
+    grid-area: e1;
+  
+
+}
+#f1{
+    grid-area: f1;
+  
+
+}
+
+#g1{
+    grid-area: g1;
+  
+
+}
+
+#h1{
+    grid-area: h1;
+  
+
+}
+
+#i1{
+    grid-area: i1;
+  
+
+}
+
+#j1{
+    grid-area: j1;
+  
+
+}
+
+#k1{
+    grid-area: k1;
+  
+
+}
+
+#l1{
+    grid-area: l1;
+  
+
+}
+
+#m1{
+    grid-area: m1;
+  
+
+}
+
+#n1{
+    grid-area: n1;
+  
+
+}
+
+#o1{
+    grid-area: o1;
+  
+
+}
+
+#p1{
+    grid-area: p1;
+  
+
+}
+
+#q1{
+    grid-area: q1;
+  
+
+}
+
+#r1{
+    grid-area: r1;
+  
+
+}
+#s1{
+    grid-area: s1;
+  
+
+}
+
+#t1{
+    grid-area: t1;
+  
+
+}
+
+#u1{
+    grid-area: u1;
+  
+
+}
+
+
 
 
 .project{
@@ -232,23 +371,61 @@
 }
 
 
-@media only screen and (max-width:1100px){
-    .project-grid{
-        max-width: 100%;
-        grid-template-areas: 
-        "eth alphabet traveler"
-        "eth astro cube"
-        "cup insta foam"
-        "dimensional insta foam"
-        "a b c"
-        "d e f"
-        "g h f"
-        "i j k"
-        "i l m"
-        "n o m";
-       
+@media only screen and (max-width: 1160px) {
+    .suggestions-container {
+        display: none;
     }
+
+    .main-content {
+        margin: auto;
+        z-index: -1;
+    }
+
+    #sidebar-1160 {
+        display: flex;
+    }
+
+    #sidebar-1160 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        row-gap: 40px;
+        height: 100vh;
+        background-color: var(--nav-bg);
+        border-right: 1px groove rgb(199, 199, 199);
+        padding: 8rem 3rem 5rem 1rem;
+    }
+
+    #sidebar-1160 a {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        align-items: baseline;
+        color: black;
+        padding: 10px auto;
+        border-radius: 5px;
+        width: 40px;
+    }
+
+    #sidebar-1160 a>img {
+        width: 23px;
+        height: 23px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    #sidebar-full {
+        display: none;
+    }
+
 }
+
+
+
+
+
 
 
 /* dialog box css */

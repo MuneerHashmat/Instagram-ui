@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../muneer/index.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="icon" href="../muneer-assets/Instagram_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Search</title>
 </head>
+
 <body>
-    <div class="sidebar" style="width: 110px !important;">
-        
+
+
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar-full" style="width: 110px !important;">
+
         <!-- top logo -->
         <div class="top">
             <a href="../index.html">
                 <img src="assets/insta.png" alt="logo1" style="width: 23px !important;">
             </a>
         </div>
-        
+
+
         <!-- middle links -->
         <div class="mid">
             <a href="../index.html" class="link">
                 <img src="../muneer-assets/home.svg" alt="home">
             </a>
-            
-            <a href="#" class="link">
+
+            <a href="search.html" class="link">
                 <img src="../muneer-assets/search.svg" alt="search">
             </a>
-            
-            <a href="#" class="link">
+
+            <a href="Vaishali/explore.html" class="link">
                 <img src="../muneer-assets/compass.svg" alt="compass">
             </a>
-            
-            <a href="#" class="link">
+
+            <a href="../muneer/reels.html" class="link">
                 <img src="../muneer-assets/reels.svg" alt="reels">
             </a>
-            
-            <a href="#" class="link">
+
+            <a href="../Dev/primary.html" class="link">
                 <img src="../muneer-assets/chat.png" alt="messenger">
             </a>
-            
+
             <a href="notification.html" class="link" style="border: 1px solid #ccc;">
                 <img src="../muneer-assets/heart.svg" alt="Notification" title="Notification">
             </a>
-            
-            <a href="#" class="link">
+
+            <a href="#" class="open-button">
                 <img src="../muneer-assets/create.svg" alt="plus">
             </a>
-            
-            <a href="#" class="link">
-                <img src="../muneer-assets/profile.svg" alt="profile">
-                
+
+            <a href="../Dev/profile.html" class="link">
+                <img src="../Dev/assets/Pfp.jpg" alt="profile" style="border-radius: 50%; height: 30px; width: 30px;">
             </a>
         </div>
-        
+
+
         <!-- bottom links -->
         <div class="bottom">
             <a href="#" class="link">
                 <img src="../muneer-assets/threads.png" alt="threads">
+            
             </a>
+
             <a href="#" class="link">
                 <img src="../muneer-assets/bars.svg" alt="bars">
+          
             </a>
         </div>
-        
+
     </div>
-    
+
     <div class="container-search">
         <div class="search">
             <div class="not-head">
@@ -113,352 +128,827 @@
             </div>
         </div>
     </div>
-    
-    <!-- posts and stories -->
-    <div class="main-content" >
-        <!-- stories -->
-        <div class="stories-container">
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
+
+
+    <div class="container-search-popup">
+        <div class="search-popup">
             
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
+            <div>
+                <div class="search-control">
+                    <span style="font-size: 15px;"><strong>Recent</strong></span>
+                    <span class="clearall">Clear all</span>
                 </div>
-                <p>marvel</p>
             </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-            
-            <div class="story">
-                <div class="img-container">
-                    <img src="../muneer-assets/story2.jpg" alt="story1">
-                </div>
-                <p>marvel</p>
-            </div>
-        </div>
-        
-        <!-- posts -->
-        <div class="post-container">
-            <div class="post">
-                
-                <div class="post-head">
-                    <div class="post-head-left">
-                        <img src="../muneer-assets/story2.jpg" alt="profile">
-                        <p>
-                            marvel
-                        </p>
-                        <span>. 1d</span>
+            <div class="recent-search">
+                <div class="searched-item">
+                    <div>
+                        <img src="assets/search/si1.jpg" alt="">
+                        <p><strong>cosmos</strong> <br>The Universe</p>
+                        <button class="remove"><span class="material-symbols-rounded">
+                            close
+                            </span></button>
                     </div>
-                    
-                    <i class="fi fi-rr-menu-dots"></i>
                 </div>
-                
-                
-                <div class="post-img">
-                    <img src="../muneer-assets/post-1.jpg" alt="post-1">
-                </div>
-                
-                
-                <div class="post-icons">
-                    
-                    <div class="post-icons-left">
-                        <img src="../muneer-assets/heart.svg" alt="like">
-                        <img src="../muneer-assets/comment.png" alt="comment">
-                        <img src="../muneer-assets/share.png" alt="share">
+                <div class="searched-item">
+                    <div>
+                        <img src="assets/search/si2.jpg" alt="">
+                        <p><strong>animal_zoo</strong> <br> The Funny Animal </p>
+                        <button class="remove"><span class="material-symbols-rounded">
+                            close
+                            </span></button>
                     </div>
-                    
-                    <img src="../muneer-assets/save.png" alt="save">
-                    
                 </div>
-                
-                <p class="likes">100 likes</p>
-                <p class="caption"><span>marvel</span> caption goes here</p>
-                <a href="#" class="comments">view all 136 comments</a>
-                <input type="text" placeholder="Add a comment">
-                <hr>
-                
-            </div>
-            
-            <div class="post">
-                
-                <div class="post-head">
-                    <div class="post-head-left">
-                        <img src="../muneer-assets/story2.jpg" alt="profile">
-                        <p>
-                            marvel
-                        </p>
-                        <span>. 1d</span>
+                <div class="searched-item">
+                    <div>
+                        <img src="assets/search/si3.jpg" alt="">
+                        <p><strong>wild_lion</strong> <br> The Lion King</p>
+                        <button class="remove"><span class="material-symbols-rounded">
+                            close
+                            </span></button>
                     </div>
-                    
-                    <i class="fi fi-rr-menu-dots"></i>
                 </div>
-                
-                
-                <div class="post-img">
-                    <img src="../muneer-assets/post-1.jpg" alt="post-1">
-                </div>
-                
-                
-                <div class="post-icons">
-                    
-                    <div class="post-icons-left">
-                        <img src="../muneer-assets/heart.svg" alt="like">
-                        <img src="../muneer-assets/comment.png" alt="comment">
-                        <img src="../muneer-assets/share.png" alt="share">
-                    </div>
-                    
-                    <img src="../muneer-assets/save.png" alt="save">
-                    
-                </div>
-                
-                <p class="likes">100 likes</p>
-                <p class="caption"><span>marvel</span> caption goes here</p>
-                <a href="#" class="comments">view all 136 comments</a>
-                <input type="text" placeholder="Add a comment">
-                <hr>
-                
-            </div>
-            
-            <div class="post">
-                
-                <div class="post-head">
-                    <div class="post-head-left">
-                        <img src="../muneer-assets/story2.jpg" alt="profile">
-                        <p>
-                            marvel
-                        </p>
-                        <span>. 1d</span>
-                    </div>
-                    
-                    <i class="fi fi-rr-menu-dots"></i>
-                </div>
-                
-                
-                <div class="post-img">
-                    <img src="../muneer-assets/post-1.jpg" alt="post-1">
-                </div>
-                
-                
-                <div class="post-icons">
-                    
-                    <div class="post-icons-left">
-                        <img src="../muneer-assets/heart.svg" alt="like">
-                        <img src="../muneer-assets/comment.png" alt="comment">
-                        <img src="../muneer-assets/share.png" alt="share">
-                    </div>
-                    
-                    <img src="../muneer-assets/save.png" alt="save">
-                    
-                </div>
-                
-                <p class="likes">100 likes</p>
-                <p class="caption"><span>marvel</span> caption goes here</p>
-                <a href="#" class="comments">view all 136 comments</a>
-                <input type="text" placeholder="Add a comment">
-                <hr>
-                
-            </div>
-            
-            <div class="post">
-                
-                <div class="post-head">
-                    <div class="post-head-left">
-                        <img src="../muneer-assets/story2.jpg" alt="profile">
-                        <p>
-                            marvel
-                        </p>
-                        <span>. 1d</span>
-                    </div>
-                    
-                    <i class="fi fi-rr-menu-dots"></i>
-                </div>
-                
-                
-                <div class="post-img">
-                    <img src="../muneer-assets/post-1.jpg" alt="post-1">
-                </div>
-                
-                
-                <div class="post-icons">
-                    
-                    <div class="post-icons-left">
-                        <img src="../muneer-assets/heart.svg" alt="like">
-                        <img src="../muneer-assets/comment.png" alt="comment">
-                        <img src="../muneer-assets/share.png" alt="share">
-                    </div>
-                    
-                    <img src="../muneer-assets/save.png" alt="save">
-                    
-                </div>
-                
-                <p class="likes">100 likes</p>
-                <p class="caption"><span>marvel</span> caption goes here</p>
-                <a href="#" class="comments">view all 136 comments</a>
-                <input type="text" placeholder="Add a comment">
-                <hr>
-                
-            </div>
-            
-            <div class="post">
-                
-                <div class="post-head">
-                    <div class="post-head-left">
-                        <img src="../muneer-assets/story2.jpg" alt="profile">
-                        <p>
-                            marvel
-                        </p>
-                        <span>. 1d</span>
-                    </div>
-                    
-                    <i class="fi fi-rr-menu-dots"></i>
-                </div>
-                
-                
-                <div class="post-img">
-                    <img src="../muneer-assets/post-1.jpg" alt="post-1">
-                </div>
-                
-                
-                <div class="post-icons">
-                    
-                    <div class="post-icons-left">
-                        <img src="../muneer-assets/heart.svg" alt="like">
-                        <img src="../muneer-assets/comment.png" alt="comment">
-                        <img src="../muneer-assets/share.png" alt="share">
-                    </div>
-                    
-                    <img src="../muneer-assets/save.png" alt="save">
-                    
-                </div>
-                
-                <p class="likes">100 likes</p>
-                <p class="caption"><span>marvel</span> caption goes here</p>
-                <a href="#" class="comments">view all 136 comments</a>
-                <input type="text" placeholder="Add a comment">
-                <hr>
-                
             </div>
         </div>
     </div>
+
+
+
+
+    <!-- sidebar for width 1160px
     
+    --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
     
+    -->
+    <div class="sidebar" style="width: 72px !important;" id="sidebar-1160">
+
+        <!-- top logo -->
+        <div class="top">
+            <a href="../index.html">
+                <img src="assets/insta.png" alt="logo1" style="width: 23px !important; height: 23px !important;">
+            </a>
+        </div>
+
+        <!-- middle links -->
+        <div class="mid">
+            <a href="../index.html" class="link">
+                <img src="../muneer-assets/home.svg" alt="home">
+            </a>
+
+            <a href="search.html" class="link">
+                <img src="../muneer-assets/search.svg" alt="search">
+            </a>
+
+            <a href="Vaishali/explore.html" class="link">
+                <img src="../muneer-assets/compass.svg" alt="compass">
+            </a>
+
+            <a href="../muneer/reels.html" class="link">
+                <img src="../muneer-assets/reels.svg" alt="reels">
+            </a>
+
+            <a href="../Dev/primary.html" class="link">
+                <img src="../muneer-assets/chat.png" alt="messenger">
+            </a>
+
+            <a href="notification.html" class="link">
+                <img src="../muneer-assets/heart.svg" alt="Notification" title="Notification">
+            </a>
+
+            <a href="#" class="open-button">
+                <img src="../muneer-assets/create.svg" alt="plus">
+            </a>
+
+            <a href="../Dev/profile.html" class="link">
+                <img src="../Dev/assets/Pfp.jpg" alt="profile" style="border-radius: 50%; height: 23px; width: 27gitpx;">
+
+            </a>
+        </div>
+
+        <!-- bottom links -->
+        <div class="bottom">
+            <a href="#" class="link">
+                <img src="../muneer-assets/threads.png" alt="threads">
+            </a>
+            <a href="#" class="link">
+                <img src="../muneer-assets/bars.svg" alt="bars">
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <!-- sidebars for width 767px and 480px
+    
+    --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    
+    -->
+    <div class="top-bar">
+
+        <a class="logo" href="../index.html">
+            <img src="../muneer-assets/logo1.svg" alt="">
+            <i class="fi fi-rr-angle-small-down" style="position: absolute; left: 135px; top: 10px;"></i>
+        </a>
+
+        <div class="right-side">
+            <input type="text" placeholder="Search">
+            <a href="#" class="open-button">
+                <img src="../muneer-assets/create.svg" alt="create" id="create" width="23px">
+            </a>
+            <a href="notification-list.html">
+                <img src="../muneer-assets/heart.svg" alt="heart" width="23px">
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="bottom-bar">
+        <a href="../index.html">
+            <img src="../muneer-assets/home.svg" alt="home">
+        </a>
+
+        <a href="Vaishali/explore.html">
+            <img src="../muneer-assets/compass.svg" alt="">
+        </a>
+
+        <a href="../muneer/reels.html">
+            <img src="../muneer-assets/reels.svg" alt="reels">
+        </a>
+
+        <a href="#" class="open-button">
+            <img src="../muneer-assets/create.svg" alt="create">
+        </a>
+
+        <a href="../Dev/primary.html">
+            <img src="../muneer-assets/chat.png" alt="messages">
+        </a>
+
+        <a href="../Dev/profile.html">
+            <img src="../Dev/assets/Pfp.jpg" alt="profile" style="border-radius: 50%;">
+        </a>
+    </div>
+
+
+    <!-- posts and stories -->
+    <div class="main-content">
+
+        <!-- stories -->
+        <div class="stories-container">
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/psg.jpg" alt="story1">
+                </div>
+                <p>psg</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/mrbeast.jpg" alt="mrbeast">
+                </div>
+                <p>mrbeast</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/ezsnippet.jpg" alt="ezsnippet">
+                </div>
+                <p>ezsnippet</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/cristiano.jpg" alt="cristiano">
+                </div>
+                <p>cristiano</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/leomessi.jpg" alt="leomessi">
+                </div>
+                <p>leomessi</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/dcofficial.jpg" alt="dcofficial">
+                </div>
+                <p>dcofficial</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/iamsrk.jpg" alt="iamsrk">
+                </div>
+                <p>iamsrk</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/virat.kohli.jpg" alt="virat">
+                </div>
+                <p>virat.kohli</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/story2.jpg" alt="story1">
+                </div>
+                <p>marvel</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/alnassr.jpg" alt="alnassr">
+                </div>
+                <p>alnassr</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/timesofindia.jpg" alt="story1">
+                </div>
+                <p>timesofindia</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/universal.jpg" alt="story1">
+                </div>
+                <p>universal</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/openai.jpg" alt="openai">
+                </div>
+                <p>openai</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/ferrari.jpg" alt="ferrari">
+                </div>
+                <p>ferrari</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/fox.jpg" alt="story1">
+                </div>
+                <p>fox</p>
+            </div>
+
+            <div class="story">
+                <div class="img-container">
+                    <img src="../muneer-assets/instagram.jpg" alt="instagram">
+                </div>
+                <p>instagram</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- posts -->
+        <div class="post-container">
+
+
+            <!-- post1 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/fox.jpg" alt="profile">
+
+                        <p>
+                            fox
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+
+                        <span>. 3h</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post2.jpg" alt="post">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">1,391 likes</p>
+                <p class="caption"><span>fox</span> caption goes here</p>
+                <a href="#" class="comments">view all 19 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+
+
+            <!-- post 2 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/unsplash.jpg" alt="profile">
+                        <p>
+                            unsplash
+
+                        </p>
+                        <span>. 1d</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post3.jpg" alt="post-1">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">1,223 likes</p>
+                <p class="caption"><span>unsplash</span> caption goes here</p>
+                <a href="#" class="comments">view all 112 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+
+            <!-- post 3 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../Dev/assets/Pfp.jpg" alt="profile">
+                        <p>
+                            andrew_laddis
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+                        <span>. 1w</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../Dev/assets/posting8.jpg" alt="post-1">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">12,601 likes</p>
+                <p class="caption"><span>andrew_laddis</span> caption goes here</p>
+                <a href="#" class="comments">view all 182 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+            <!-- post4 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/story2.jpg" alt="profile">
+                        <p>
+                            marvel
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+                        <span>. 1d</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post-1.jpg" alt="post-1">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">100 likes</p>
+                <p class="caption"><span>marvel</span> caption goes here</p>
+                <a href="#" class="comments">view all 136 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+            <!-- post5 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/discovery.jpg" alt="profile">
+                        <p>
+                            discovery
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+                        <span>. 1d</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post4.jpg" alt="post-1">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">6,784 likes</p>
+                <p class="caption"><span>discovery</span> caption goes here</p>
+                <a href="#" class="comments">view all 196 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+
+            <!-- post6 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/psg.jpg" alt="profile">
+
+                        <p>
+                            psg
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+
+                        <span>. 2d</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post6.jpg" alt="post">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">1,391 likes</p>
+                <p class="caption"><span>psg</span> caption goes here</p>
+                <a href="#" class="comments">view all 26 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+            <!-- post 7 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/timesofindia.jpg" alt="profile">
+
+                        <p>
+                            timesofindia
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+
+                        <span>. 2w</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post5.jpg" alt="post">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">12,391 likes</p>
+                <p class="caption"><span>timesofindia</span> caption goes here</p>
+                <a href="#" class="comments">view all 19 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+
+            <!-- post 8 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/mrbeast.jpg" alt="profile">
+
+                        <p>
+                            mrbeast
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+
+                        <span>. 1w</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post8.jpg" alt="post">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">1.2M likes</p>
+                <p class="caption"><span>mrbeast</span> caption goes here</p>
+                <a href="#" class="comments">view all 42,122 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+            <!-- post9 -->
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/ferrari.jpg" alt="profile">
+
+                        <p>
+                            ferrari
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+
+                        <span>. 3h</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post9.jpg" alt="post">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">54,391 likes</p>
+                <p class="caption"><span>ferrari</span> caption goes here</p>
+                <a href="#" class="comments">view all 1,924 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+
+            <!-- post10 -->
+
+            <div class="post">
+
+                <div class="post-head">
+                    <div class="post-head-left">
+                        <img src="../muneer-assets/virat.kohli.jpg" alt="profile">
+
+                        <p>
+                            virat.kohli
+                            <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;">
+                        </p>
+
+                        <span>. 3w</span>
+                    </div>
+
+                    <i class="fi fi-rr-menu-dots"></i>
+                </div>
+
+
+                <div class="post-img">
+                    <img src="../muneer-assets/post10.jpg" alt="post">
+                </div>
+
+
+                <div class="post-icons">
+
+                    <div class="post-icons-left">
+                        <img src="../muneer-assets/heart.svg" alt="like">
+                        <img src="../muneer-assets/comment.png" alt="comment">
+                        <img src="../muneer-assets/share.png" alt="share">
+                    </div>
+
+                    <img src="../muneer-assets/save.png" alt="save">
+
+                </div>
+
+                <p class="likes">5.4M likes</p>
+                <p class="caption"><span>virat.kohli</span> caption goes here</p>
+                <a href="#" class="comments">view all 41,423 comments</a>
+                <input type="text" placeholder="Add a comment">
+                <hr>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
     <!-- suggestions -->
     <div class="suggestions-container">
-        
+
         <div class="profile-container">
-            
+
             <div class="left-items">
-                <img src="../muneer-assets/story2.jpg" alt="profile-pic">
+                <img src="../Dev/assets/Pfp.jpg" alt="profile-pic">
                 <div class="profile-info">
-                    <p class="username">username</p>
-                    <p class="name">name</p>
+                    <p class="username">andrew_laddis <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                            style="border: none; width: 12px; height: 12px; padding-top: 2px;"></p>
+                    <p class="name">Andrew Laddis</p>
                 </div>
             </div>
-            
+
             <p class="blue-text">Switch</p>
         </div><br>
-        
+
         <div class="suggested-for-you">
             <p class="gray">Suggested for you</p>
             <p class="black" style="font-weight: 500;">See all</p>
         </div>
-        
+
         <div class="suggestions">
-            
+
             <div class="suggestion-item">
                 <div class="left-items">
                     <img src="../muneer-assets/suggest1.jpg" alt="profile-pic">
                     <div class="profile-info">
-                        <p class="username">therock</p>
+                        <p class="username">therock <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;"></p>
                         <p class="name">Suggested for you</p>
                     </div>
                 </div>
-                
+
                 <p class="blue-text">Follow</p>
             </div>
-            
+
             <div class="suggestion-item">
                 <div class="left-items">
-                    <img src="../muneer-assets/suggest1.jpg" alt="profile-pic">
+                    <img src="../muneer-assets/unsplash.jpg" alt="profile-pic">
                     <div class="profile-info">
-                        <p class="username">therock</p>
+                        <p class="username">unsplash</p>
                         <p class="name">Suggested for you</p>
                     </div>
                 </div>
-                
+
                 <p class="blue-text">Follow</p>
             </div>
-            
+
             <div class="suggestion-item">
                 <div class="left-items">
-                    <img src="../muneer-assets/suggest1.jpg" alt="profile-pic">
+                    <img src="../muneer-assets/discovery.jpg" alt="profile-pic">
                     <div class="profile-info">
-                        <p class="username">therock</p>
+                        <p class="username">discovery <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;"></p>
                         <p class="name">Suggested for you</p>
                     </div>
                 </div>
-                
+
                 <p class="blue-text">Follow</p>
             </div>
-            
+
             <div class="suggestion-item">
                 <div class="left-items">
-                    <img src="../muneer-assets/suggest1.jpg" alt="profile-pic">
+                    <img src="../muneer-assets/freepik.jpg" alt="profile-pic">
                     <div class="profile-info">
-                        <p class="username">therock</p>
+                        <p class="username">freepik <img src="../muneer-assets/blue-tick.png" alt="blue-tick"
+                                style="border: none; width: 12px; height: 12px; padding-top: 2px;"></p>
                         <p class="name">Suggested for you</p>
                     </div>
                 </div>
-                
+
                 <p class="blue-text">Follow</p>
             </div><br>
-            
-            
+
+
             <div class="bottom-text">
                 <p><span>About</span> .
                     <span>Help</span> .
@@ -474,14 +964,35 @@
                 <br>
                 <p class="copyright">© 2024 INSTAGRAM FROM META</p>
             </div>
-            
+
         </div>
-        
+
     </div>
-    
-    
+
+
+
+
+
+    <!-- create post popup -->
+    <dialog class="modal" id="modal">
+        <h4 style="margin-top: 10px; font-weight: 500;">Create new post</h4>
+        <hr style="margin-top: 10px;">
+        <div class="centre-content">
+            <img src="../muneer-assets/multimedia.png" alt="multimedia" width="100px" height="100px">
+            <p class="normal">Drag photos and videos here</p>
+            <p class="blue">Select from computer</p>
+        </div>
+        <button class="button close-button"><i class="fi fi-rr-cross"></i></button>
+    </dialog>
+
+
+
+
+
     <!-- fontawesome script -->
     <script src="https://kit.fontawesome.com/b51e04bf50.js" crossorigin="anonymous"></script>
-    
+    <script src="../muneer/index.js"></script>
+
 </body>
+
 </html>

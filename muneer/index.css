@@ -322,6 +322,10 @@ body {
     color: black;
 }
 
+.suggested-for-you p a:visited:hover{
+    color: var(--text-gray) ;
+}
+
 .suggested-for-you .gray,
 .suggested-for-you .black:hover {
     color: var(--text-gray);

@@ -7,84 +7,85 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../muneer/index.css">
     <link rel='stylesheet'
-    href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet'
-    href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="../muneer/modal.css">
+
     <title>Instagram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+
     <!-- sidebar -->
     <div class="sidebar">
-        
+
         <!-- top logo -->
         <div class="top">
             <img src="../muneer-assets/logo1.svg" alt="logo1" width="60%" height="40px" style="padding-left: 3px;">
         </div>
-        
-        
+
+
         <!-- middle links -->
         <div class="mid">
             <a href="#" class="link">
                 <img src="../muneer-assets/home.svg" alt="home">
                 <span>Home</span>
             </a>
-            
+
             <a href="#" class="link">
                 <img src="../muneer-assets/search.svg" alt="search">
                 <span>Search</span>
             </a>
-            
+
             <a href="#" class="link">
                 <img src="../muneer-assets/compass.svg" alt="compass">
                 <span>Explore</span>
             </a>
-            
+
             <a href="#" class="link">
                 <img src="../muneer-assets/reels.svg" alt="reels">
                 <span>Reels</span>
             </a>
-            
+
             <a href="#" class="link">
                 <img src="../muneer-assets/chat.png" alt="messenger">
                 <span>Messages</span>
             </a>
-            
+
             <a href="notification.html" class="link">
                 <img src="../muneer-assets/heart.svg" alt="heart" title="Notification">
                 <span>Notifications</span>
             </a>
-            
-            <a href="#" class="link">
+
+            <a href="#" class="open-button">
                 <img src="../muneer-assets/create.svg" alt="plus">
                 <span>Create</span>
             </a>
-            
+
             <a href="#" class="link">
                 <img src="../muneer-assets/profile.svg" alt="profile">
                 <span>Profile</span>
             </a>
         </div>
-        
-        
+
+
         <!-- bottom links -->
         <div class="bottom">
             <a href="#" class="link">
                 <img src="../muneer-assets/threads.png" alt="threads">
                 <span>Threads</span>
             </a>
-            
+
             <a href="#" class="link">
                 <img src="../muneer-assets/bars.svg" alt="bars">
                 <span>More</span>
             </a>
         </div>
-        
+
     </div>
-    
+
     <!-- <div class="suggestion">
         <div class="suggestion-panel">
             <h4>Suggested</h4>  
@@ -93,7 +94,7 @@
             </div>
         </div>
     </div> -->
-    
+
     <div class="suggestion">
         <div class="people">
             <h4>Suggested</h4>
@@ -147,11 +148,11 @@
                 <p class="item"><strong>love_hht568</strong><br> Aisha takur <br> Suggest for you</p>
                 <button>Follow</button>
             </div>
-            
+
         </div>
-        
-        <div class="footer-text" >
-            <a href="#">ABOUT</a> 
+
+        <div class="footer-text">
+            <a href="#">ABOUT</a>
             <a href="#">HELP </a>
             <a href="#">PRESS</a>
             <a href="#">API</a>
@@ -161,19 +162,45 @@
             <br>
             <a href="#">LOCATION</a>
             <a href="#" style="font-weight: 200 !important;">Language</a>
-            <a href="#">META VERIFIED</a>  
+            <a href="#">META VERIFIED</a>
             <br>
             <p class="copyright">© 2024 INSTAGRAM FROM META</p>
         </div>
-        
+
     </div>
-    
-    
-    
-    
+
+    <!-- create post popup -->
+    <dialog class="modal" id="modal">
+        <h4 style="margin-top: 10px; font-weight: 500;">Create new post</h4>
+        <hr style="margin-top: 10px;">
+        <div class="centre-content">
+            <img src="../muneer-assets/multimedia.png" alt="multimedia" width="100px" height="100px">
+            <p class="normal">Drag photos and videos here</p>
+            <p class="blue">Select from computer</p>
+        </div>
+        <button class="button close-button"><i class="fi fi-rr-cross"></i></button>
+    </dialog>
+
+    <script>
+        const modal = document.querySelector("#modal");
+        const openModals = document.querySelectorAll(".open-button");
+        const closeModal = document.querySelector(".close-button");
+
+        openModals.forEach((openModal) => {
+            openModal.addEventListener("click", () => {
+                modal.showModal();
+            });
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.close();
+        });
+    </script>
+
+
     <!-- fontawesome script -->
     <script src="https://kit.fontawesome.com/b51e04bf50.js" crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>

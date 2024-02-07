@@ -421,7 +421,7 @@ body {
 
 .modal .centre-content .blue {
     color: white;
-    background-color: var(--text-blue);
+    background-color: #0095F6;
     border-radius: 5px;
     padding: 5px 10px;
     font-size: smaller;

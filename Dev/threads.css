@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,800&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    background-color:#101010 ;
+}
+
+.container .img-container{
+    width: 95%;
+    height: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+
+.container .img-container img{
+    
+    object-fit: cover;
+    max-width: 100%;
+   
+    
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+    width: 350px;
+    /* border:1px solid green; */
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+}
+
+.form-container .login-text {
+    width: 100%;
+    height: 40px;
+}
+
+.form-container .login-text span b{
+    margin: 0 auto 16px 32px;
+    color: #F3F5F7;
+}
+
+.form-container .username, .username-fill, .password-fill, .userinput{
+    width: 100%;
+    height: 55px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-container .username .userinput{
+    padding-left: 16px;
+    font-size: 1.01rem;
+}
+
+.form-container .username, .button {
+    margin-top: 8px;
+}
+
+.button{
+    background-color: #ffffff;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button:hover{
+    cursor: not-allowed;
+}
+
+.btn{
+    margin: 15px 150px;
+}
+
+.btn button{
+    background-color: #ffffff;
+    border: none;
+    color: #9f9f9f ;
+    
+}
+
+.forgot{
+    width: 100%;
+    height: 35px;
+    padding-top: 1rem;
+}
+
+.forgot span a{
+    margin-left: 108px ;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #777777;
+}
+
+a:visited{
+    cursor: pointer;
+    color: #9f9f9f;
+}
+
+.or{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.or .break {
+    width: 45%;
+    height: 0.1px;
+    margin-top: 27px;
+    margin-bottom: 24px;
+    background-color:  #323333;
+
+}
+
+.or-text{
+    margin-top: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.or-text span {
+    color: #777777;
+    height: 5px;
+}
+
+.continue{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #323333;
+    border-radius: 11px;
+    /* padding: 16px 16px 16px 20px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.continue:hover{
+    cursor: pointer;
+}
+
+.continue .logo img{
+    width: 45px;
+    height: 45px;
+}
+
+.continue .continue-insta span b{
+    color: #ffffff;
+}
+
+.continue .side img{
+    width: 20px;
+    height: 20px;
+}
+
+.scan{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.scan .getapp{
+    color: #777777;
+    margin: 0 auto 20px auto;
+}
+
+.scan img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.footer{
+    position: absolute;
+    width: 100vh;
+    text-align: center;
+    right: 50%;
+    left: 35%;
+    bottom: 20px;
+    margin-top: 0px;
+    z-index: 1000;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction:row ;
+}
+
+.footer ul li{
+    list-style: none;
+    line-height: 1;
+    color: #777777;
+    font-size: small;
+    margin-right: 10px;
+}
+
+.footer ul li:hover{
+    text-decoration: underline;
+}

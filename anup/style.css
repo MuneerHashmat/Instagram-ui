@@ -135,7 +135,7 @@ a{
     position: fixed;
     left: 70px;
     height: 100vh;
-    width: 30%;
+    width: 400px;
     z-index: 1000;
 }
 .search{
@@ -212,6 +212,33 @@ a{
     color: #086faa;
 }
 
+
+/* --------------Popup Search------------- */
+
+.container-search-popup{
+
+    position: fixed;
+    left: 20%;
+    width: 70%;
+    z-index: 1000;
+    top:50px;
+    
+}
+.search-popup{
+    position: absolute;
+    z-index: 1000;
+    background-color: #fff;
+    height: 46vh;
+    border: 1px solid #f3f3f3;
+    box-shadow: 10px 0px 20px 0px #0c0c0c1f;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+
+
+
 .top-barx {
     position: fixed;
     width: 100%;
@@ -277,6 +304,9 @@ a{
     .top-barx {
         display: none !important;
     }
+    .container-search-popup{
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -322,6 +352,9 @@ a{
         position: absolute;
         right: 0;
         margin-right: 5%;
+    }
+    .container-search{
+        display: none;
     }
 
 }

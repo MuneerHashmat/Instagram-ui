@@ -578,6 +578,10 @@ body {
         transition: transform 0.2s ease-in-out;
     }
 
+    .bottom-bar a:hover {
+        cursor: pointer;
+    }
+
     .bottom-bar a:hover img {
         cursor: pointer;
         transform: scale(1.1);
@@ -664,6 +668,10 @@ body {
 
 }
 
+
+
+
+
 @media only screen and (max-width: 480px) {
 
     .top-bar .right-side {
@@ -707,6 +715,12 @@ body {
     .post-head,
     .post-icons {
         padding: 0 20px 0 7px;
+    }
+
+    .post>p,
+    .post>a,
+    .post>input {
+        padding-left: 7px;
     }
 
 }

@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+:root {
+    --nav-bg: rgb(255, 255, 255);
+    --hover-bg: rgb(225, 225, 225);
+    --text-gray: rgb(120, 120, 120);
+    --text-blue: #0095F6;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -15,6 +24,7 @@
     border-right: 1px groove rgb(199, 199, 199);
     padding: 2rem 3rem 5rem 1rem;
 }
+
 
 
 .sidebar .mid,
@@ -83,6 +93,7 @@ body{
 
 .project-grid{
     display: grid;
+    margin-top: 50px;
     gap: 5px;
     grid-template-areas: 
     "eth alphabet traveler"
@@ -337,6 +348,7 @@ body{
 .project{
     /* width: 600px; */
     position: relative;
+    margin-top: 10px;
 }
 .project img{
     width: 100%;

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
+
+:root {
+    --nav-bg: rgb(255, 255, 255);
+    --hover-bg: rgb(225, 225, 225);
+    --text-gray: rgb(120, 120, 120);
+    --text-blue: #0095F6;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     row-gap: 40px;
     width: 250px;
     height: 100vh;
@@ -84,13 +94,14 @@
     height: 657px;
     margin: 20px auto;
     column-gap: 1.5rem;
-    box-shadow: 10px;
 }
 
 .video-container {
     position: relative;
     height: 657px;
     width: 369.562px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
 }
 
 .video-container .content {
@@ -222,4 +233,70 @@ video {
 .modal .centre-content .blue:hover {
     cursor: pointer;
     background-color: #036fb7;
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+#sidebar-1160 {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1160px) {
+    .suggestions-container {
+        display: none;
+    }
+
+    .main-content {
+        margin: auto;
+        z-index: -1;
+    }
+
+    #sidebar-1160 {
+        display: flex;
+    }
+
+    #sidebar-1160 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        row-gap: 40px;
+        height: 100vh;
+        background-color: var(--nav-bg);
+        border-right: 1px groove rgb(199, 199, 199);
+        padding: 8rem 3rem 5rem 1rem;
+    }
+
+    #sidebar-1160 a {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        align-items: baseline;
+        color: black;
+        padding: 10px auto;
+        border-radius: 5px;
+        width: 40px;
+    }
+
+    #sidebar-1160 a>img {
+        width: 23px;
+        height: 23px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    #sidebar-full {
+        display: none;
+    }
+
 }

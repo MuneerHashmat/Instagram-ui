@@ -24,16 +24,17 @@ Welcome to the Instagram Clone project! This project aims to replicate the user 
 
 
 ## Website Images
-
-
+![image](https://github.com/MuneerHashmat/Instagram-ui/blob/main/muneer-assets/pictures/final.jpg)
 
 
 
 
 
 ## Contributers
-
-
+* **Muneer Hashmat** 
+* **Anup Kumar**
+* **Vaishali Tomar**
+* **Dev**
 
 
 ## Acknowledgments

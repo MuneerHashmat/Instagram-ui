@@ -67,7 +67,7 @@
     cursor: pointer;
 }
 body{
-    background-color: hsl(0, 100%, 99%);
+    background-color: #fff;
     color: aliceblue;
 }
 
@@ -84,7 +84,7 @@ body{
     height: 300px;
     display: flex;    
     position: absolute;
-    z-index: 15;
+
     top: 10px;
     right: -260px;
    color: rgb(253, 247, 247);
@@ -95,7 +95,6 @@ body{
 .project-grid{
     display: grid;
     margin-top: 25px;
-
     gap: 5px;
     grid-template-areas: 
     "eth alphabet traveler"
@@ -379,8 +378,6 @@ body{
 .project .overlay:hover{
     opacity: 1;
     cursor: pointer;
-
-
 }
 
 
@@ -391,7 +388,6 @@ body{
 
     .main-content {
         margin: auto;
-        z-index: -1;
     }
 
     #sidebar-1160 {
@@ -432,20 +428,32 @@ body{
     #sidebar-full {
         display: none;
     }
+   
 
 }
 
 @media only screen and (max-width:768px){
-    .project-grid{
+    /* .project-grid{
         margin-top: 80px;
    
         max-width: 100%;
         
-    }
+    } */
     .right-side{
         text-align: center;
         width: 100%;
-        margin-left: 50px;
+    }
+    .container, .project-grid{
+
+        padding: 0;
+        margin-left: 20px;
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .search-box{
+        display: none;
     }
 }
 
@@ -506,3 +514,17 @@ body{
 
     
     
+.search-box{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #ebebeb;
+    padding: 15px;
+    outline: none;
+    border: none;
+}

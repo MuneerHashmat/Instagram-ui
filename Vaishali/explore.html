@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../muneer/index.css">
     <link rel="icon" href="../muneer-assets/Instagram_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../muneer/modal.css">
+    <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    
 </head>
 
 <body>
@@ -763,6 +767,24 @@
         </div>
         <button class="button close-button"><i class="fi fi-rr-cross"></i></button>
     </dialog>
+
+    <script>
+
+        const modal = document.querySelector("#modal");
+        const openModals = document.querySelectorAll(".open-button");
+        const closeModal = document.querySelector(".close-button");
+
+        openModals.forEach((openModal) => {
+            openModal.addEventListener("click", () => {
+                modal.showModal();
+            });
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.close();
+        });
+
+    </script>
 
 
 

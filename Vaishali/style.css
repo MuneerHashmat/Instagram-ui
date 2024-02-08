@@ -72,7 +72,8 @@ body{
 }
 
 .container{
-    max-width: 70%;
+    max-width: 75%;
+    
     margin-left: 22vw;
     padding: 0 16px;
     
@@ -93,7 +94,8 @@ body{
 
 .project-grid{
     display: grid;
-    margin-top: 50px;
+    margin-top: 25px;
+
     gap: 5px;
     grid-template-areas: 
     "eth alphabet traveler"
@@ -348,7 +350,6 @@ body{
 .project{
     /* width: 600px; */
     position: relative;
-    margin-top: 10px;
 }
 .project img{
     width: 100%;
@@ -434,11 +435,19 @@ body{
 
 }
 
-
-
-
-
-
+@media only screen and (max-width:768px){
+    .project-grid{
+        margin-top: 80px;
+   
+        max-width: 100%;
+        
+    }
+    .right-side{
+        text-align: center;
+        width: 100%;
+        margin-left: 50px;
+    }
+}
 
 /* dialog box css */
 .modal {

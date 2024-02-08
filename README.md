@@ -6,6 +6,7 @@ Welcome to the Instagram Clone project! This project aims to replicate the user 
 ## Features
 * **User-Friendly Design:**  Our design language is easy and eye-pleasing to use.
 + **Responsive Design:** The frontend is designed to be responsive, ensuring a consistent and enjoyable experience across various devices.
++ + **Interactive User Engagement:** Our Instagram UI clone goes beyond static design by incorporating interactive elements that enhance user engagement. From dynamic animations to seamless transitions, we prioritize an interactive user experience to make navigating the app not only visually appealing but also enjoyable and intuitive for users.
 
 ## Technologies Used
 - **HTML5/CSS3:** For structuring and styling the web pages.
